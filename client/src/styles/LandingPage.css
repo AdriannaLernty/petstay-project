@@ -1,0 +1,75 @@
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #f6f9fc, #dbe4ff);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.landing-content {
+  text-align: left;
+  max-width: 500px;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.booking-button, 
+.services-button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.services-button {
+  background-color: #4caf50; /* Green shade for services */
+}
+
+.booking-button:hover, 
+.services-button:hover {
+  background-color: #388e3c;
+  transform: translateY(-3px);
+}
+
+.landing-image-container {
+  margin-left: 40px;
+}
+
+.landing-image {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 15px;
+  
+}

@@ -1,0 +1,42 @@
+.admin-header {
+  background-color: #5a7184;
+  color: white;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; /* ✅ full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.admin-header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.admin-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.admin-header nav a:hover {
+  color: #e0e0e0;
+}
+
+.admin-dashboard {
+  margin-top: 70px;   /* leave space for fixed header */
+  margin-bottom: 60px; /* leave space for fixed footer */
+  padding: 30px 40px;
+  min-height: calc(100vh - 130px); /* adjust for header + footer height */
+}

@@ -1,0 +1,119 @@
+.admin-dashboard {
+  background: linear-gradient(to right, #dbeaf3, #e6e4f7);
+  padding: 40px 60px;
+  min-height: 90vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2e3b4e;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.metric-box {
+  background-color: #ffffff;
+  border: 2px solid #5a7184;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.metric-box:hover {
+  transform: translateY(-3px);
+}
+
+.metric-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #5a7184;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.bookings-table th, .bookings-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.bookings-table th {
+  background-color: #5a7184;
+  color: #ffffff;
+}
+
+.bookings-table td {
+  color: #444;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  font-size: 13px;
+  background-color: #5a7184;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-btn:hover {
+  background-color: #3d566a;
+}
+
+.inbox-placeholder {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #f4f7fa;
+  text-align: center;
+  border: 1px dashed #a0b0c0;
+  border-radius: 10px;
+  color: #555;
+  font-style: italic;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
+}

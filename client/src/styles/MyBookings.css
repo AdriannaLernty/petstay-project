@@ -1,0 +1,112 @@
+.my-bookings-page {
+  padding: 600px 30px 100px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fdf2f8, #e0f2fe);
+  text-align: center;
+}
+
+.booking-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.booking-card {
+  background-color: white;
+  border-left: 6px solid #60a5fa;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: scale(1.01);
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.confirmed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.feedback-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-form select,
+.feedback-form textarea {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.feedback-form button {
+  align-self: flex-start;
+  padding: 8px 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #357ac8;
+}
+
+.feedback-list {
+  margin-top: 15px;
+}
+
+.feedback-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: #f9f9f9;
+}
+
+.feedback-actions button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.feedback-actions button:hover {
+  background-color: #ddd;
+}
+
+

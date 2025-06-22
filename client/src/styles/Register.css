@@ -1,0 +1,150 @@
+body {
+  background: linear-gradient(135deg, #b2d4ff, #c09cff);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header Greeting */
+.header {
+  width: 100%;
+  background-color: rgba(144, 169, 201, 0.85);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Registration Form Container */
+.register-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.register-container h2 {
+  font-size: 28px;
+  color: #3b3b3b;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f4f6fa;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.register-container input:focus {
+  outline: none;
+  border-color: #90caf9;
+}
+
+/* Register Button */
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+  background-color: #3a7cd4;
+}
+
+/* Footer Contact Us */
+.footer {
+  width: 100%;
+  background-color: rgba(144, 169, 201, 0.85);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Media Icons */
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer a:hover {
+  color: #e0e0e0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+
+.tooltip {
+  font-size: 12px;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.password-checklist p {
+  font-size: 13px;
+  margin: 2px 0;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.password-checklist .valid {
+  color: green;
+}
+
+.password-checklist .invalid {
+  color: red;
+}
