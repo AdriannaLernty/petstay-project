@@ -22,7 +22,7 @@ exports.googleLogin = async (req, res) => {
     console.log("Google payload:", payload);
     const { email, name } = payload;
     
-    
+    const isAdmin = email === "adriannalernty01@gmail.com";
 
     // Check if user exists
     const [users] = await db.query("SELECT * FROM users WHERE email = ?", [email]);
@@ -32,7 +32,7 @@ exports.googleLogin = async (req, res) => {
       // Register user
       await db.query(
         "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)",
-        [name, email, "", "user"]
+        [name, email, "", isAdmin ? "admin" : "user"]
       );
       const [newUsers] = await db.query("SELECT * FROM users WHERE email = ?", [email]);
       user = newUsers[0];

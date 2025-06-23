@@ -34,7 +34,7 @@ function PaymentPage() {
     formData.append("bookingIds", "manual_upload");
 
     try {
-      const response = await fetch("http://localhost:5000/api/upload", {
+      const response = await fetch("http://localhost:5000/api/payments/upload", {
         method: "POST",
         body: formData,
       });

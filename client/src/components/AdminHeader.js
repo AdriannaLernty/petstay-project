@@ -8,8 +8,8 @@ function AdminHeader() {
       <div className="admin-logo">PetStay Admin</div>
       <nav className="admin-nav">
         <Link to="/admin-dashboard">Dashboard</Link>
-        <Link to="/admin-dashboard#bookings">Bookings</Link>
-        <Link to="/admin-dashboard#inbox">Inbox</Link>
+        <Link to="/admin-bookings">Bookings</Link>
+        <Link to="/admin-services">Manage Services</Link>
         <Link to="/login">Logout</Link>
       </nav>
     </header>

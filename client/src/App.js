@@ -21,6 +21,8 @@ import AboutPage from "./pages/AboutPage";
 import PaymentPage from "./pages/PaymentPage";
 import { CartProvider } from "./context/CartContext";
 import PaymentHistory from "./pages/PaymentHistory";
+import AdminBookings from "./pages/AdminBookings";
+import AdminServices from "./pages/AdminServices";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -49,6 +51,22 @@ function LayoutWrapper() {
           element={
             <AdminRoute>
               <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin-bookings"
+          element={
+            <AdminRoute>
+              <AdminBookings />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin-services"
+          element={
+            <AdminRoute>
+              <AdminServices />
             </AdminRoute>
           }
         />

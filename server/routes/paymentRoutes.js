@@ -87,7 +87,7 @@ router.post("/upload", upload.single("proof"), (req, res) => {
 
 
 // ✅ Get payment history
-router.get("/:userId", (req, res) => {
+router.get("/upload/:userId", (req, res) => {
   const userId = req.params.userId;
   console.log("▶️ Fetching payment records for user ID:", userId);
 

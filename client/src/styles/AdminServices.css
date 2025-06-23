@@ -1,0 +1,159 @@
+/* AdminServices.css */
+
+.admin-dashboard {
+  padding: 30px;
+  background: linear-gradient(to right, #c0d9ff, #d4bfff);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.admin-dashboard h2 {
+  margin-top: 100px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-btn {
+  background-color: #7f5af0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-btn:hover {
+  background-color: #693de5;
+}
+
+.admin-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.admin-service-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 320px;
+  transition: transform 0.2s;
+}
+
+.admin-service-card:hover {
+  transform: translateY(-4px);
+}
+
+.admin-service-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-service-details textarea {
+  width: 100%;
+  height: 50px; /* ✅ Set a fixed height */
+  resize: vertical; /* Allow vertical resize if needed */
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  line-height: 1.4;
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.admin-service-details input,
+.admin-service-details textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.admin-service-details input:focus,
+.admin-service-details textarea:focus {
+  border-color: #7f5af0;
+  outline: none;
+}
+
+.admin-price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-price-row input {
+  flex: 1;
+}
+
+.admin-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background-color: #ff5c5c;
+}
+
+.cancel-btn:hover {
+  background-color: #e64949;
+}
+
+/* Add button */
+.add-btn {
+  margin-top: 20px;
+}

@@ -56,9 +56,15 @@ function Login() {
       setMessage(data.message);
 
       if (data.user) {
+        console.log("🧪 Logged in user from Google:", data.user);
         localStorage.setItem("user", JSON.stringify(data.user));
         localStorage.setItem("token", data.token);
-        setTimeout(() => navigate("/"), 1000);
+
+        if (data.user.role === "admin") {
+          navigate("/admin-dashboard");
+        } else {
+          navigate("/");
+        }
       }
     } catch (err) {
       console.error("Google login error:", err);
